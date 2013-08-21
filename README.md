@@ -25,6 +25,13 @@ Install into TYPO3 with Composer. Add the following config to your `composer.jso
             "type": "vcs",
             "url": "https://github.com/3ev/tev_boilerplate"
         }
+    },
+    "extra": {
+        "installer-paths": {
+            "htdocs/typo3conf/ext/{$name}/": [
+                "3ev/tev_boilerplate"
+            ]
+        }
     }
 }
 ```
