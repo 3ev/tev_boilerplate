@@ -1,0 +1,45 @@
+// run
+// sass --watch --debug-info --style compact sass/style.scss:css/style.css
+// in production run sass --watch  sass/style.scss:css/style.css --style compressed
+
+// use individual files for stand alone site sections eg home.scss products.css
+
+// settings
+@import "settings/reset.scss";
+@import "settings/clearfix.scss";
+@import "settings/image.scss";
+
+
+// toolkits & varaibles
+@import "colors.scss";
+@import "toolkit/tools.scss";
+
+
+// grid
+@import "layout/grid.scss";
+
+
+// global
+@import "objects.scss";
+@import "typography.scss";
+
+
+// interface
+@import "interface/navigation.scss";
+@import "interface/forms.scss";
+@import "interface/modal.scss";
+
+
+// widgets, sliders & plugins
+@import "plugins/flexslider.scss";
+@import "plugins/lightbox.scss";
+@import "plugins/bootstrap-datepicker.scss";
+
+
+// global layout
+@import "layout/global-layout.scss";
+
+
+// responsive layout
+@import "layout/responsive-layout.scss";
+@import "layout/retina.scss";

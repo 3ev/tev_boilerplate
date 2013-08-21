@@ -1,0 +1,32 @@
+
+
+// Colors
+
+$grey: #ddd;
+$errorColor:red;
+$errorBgColor:pink;
+
+
+
+// Brand colors
+$myVar: #FFFF00;
+
+
+// Font Colors
+$headingColor: #ff0000; 
+$bodyTextColor: #000000;
+
+
+// text selection
+$selectionBgColor: #454544;
+$selectionColor: #FFFFFF;
+
+
+
+
+//Calculated Colors
+$tableColor:$grey;
+$oddRow:lighten($tableColor, 10%);
+$evenRow: $tableColor;
+$tableheader:darken($tableColor, 10%);
+$tableheaderOdd:lighten($tableheader, 10%);

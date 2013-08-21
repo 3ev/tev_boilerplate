@@ -1,0 +1,14 @@
+/* Navigation
+----------------------------------------------------------------------------------------------------*/
+
+/*Primary*/
+#primaryNav { 
+    li { display: block; float: left;
+        a { display: block;
+        &:hover {  }
+        &.on { 
+             &:hover{ cursor: default;}
+             } 
+        } 
+    }
+}

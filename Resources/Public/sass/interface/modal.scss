@@ -1,0 +1,85 @@
+// modal window 
+// use with modal .js
+
+.modal-window-open .modal-overlay {
+  display: block;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #575757;
+  background: rgba(82, 82, 82, 0.35);
+  z-index: 1000;
+  overflow: scroll;
+
+      .modal-window {
+        display: none;
+        width: 622px;
+        margin: 5% auto 5% auto;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 4px;
+        overflow: auto;
+        position: relative;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+      
+            &.active-modal {
+              display: block;
+            }
+            .inner { 
+              background: #fff;
+              min-height: 200px;
+              padding: 20px;
+              position: relative;
+            }
+            .modal-close {
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 73px;
+              height: 40px;
+              text-transform: uppercase;
+              font-weight: 700;
+              line-height: 41px;
+              font-size: 12px;
+              cursor: pointer;
+              color: #808080;
+              background: url(../img/close-x.png) 46px 11px no-repeat;
+              -moz-transition: opacity .4s ease-in-out;
+              -webkit-transition: opacity .4s ease-in-out;
+              -ms-transition: opacity .4s ease-in-out;
+              transition: opacity .4s ease-in-out;
+                  &:hover { color: #000; }
+            }
+            .modal-close-hidden {
+              -moz-opacity: 0;
+              filter: alpha(opacity=0);
+              opacity: 0;
+            }
+            form .button { margin-left: 30%; }
+            h2 { padding-right: 40px; }
+
+      }
+
+    .modal-loader {
+      background-position: 3px 3px;
+      background-color: #fff;
+      width: 32px;
+      height: 32px;
+      top: 5px;
+      right: 5px;
+    }
+
+
+}
+
+

@@ -1,0 +1,9 @@
+
+/* Clear Fixes
+----------------------------------------------------------------------------------------------------*/
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+.clx:before,.clx:after{content:'\0020';display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+.clx:after{clear:both}
+.clx{zoom:1;}

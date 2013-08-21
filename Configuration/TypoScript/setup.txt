@@ -1,0 +1,9 @@
+###################################################
+# Include all TypoScript files
+###################################################
+
+# Plugins
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tev_boilerplate/Configuration/TypoScript/Plugin/tx_fluidpages.ts">
+
+# Lib
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tev_boilerplate/Configuration/TypoScript/lib/env.ts">

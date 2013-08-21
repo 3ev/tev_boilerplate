@@ -1,0 +1,27 @@
+
+
+// Sass Toolkit.
+@import "lib/toolkit";
+
+// for usage see: 
+// https://github.com/blakehaswell/sass-toolkit/tree/master/lib/mixins
+
+
+// box-shadow
+// @include boxShadow( $values );
+
+
+// gradient (includes IE)
+// @include linearGradient($topColor, $bottomColor)
+
+
+// border-radius
+// @include borderRadius($val)
+
+
+// CSS transitions
+// @include transition($values)
+
+
+// box-sizing 
+// @include boxSizing($boxModel)

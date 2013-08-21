@@ -1,0 +1,257 @@
+
+
+// default form style (label on the left)
+.field {
+  width: 100%;
+  margin-bottom: 10px;
+  min-height: 30px;
+  position: relative;
+
+    input.text,
+    input[type=text] {
+      width: 70%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    input.error.text,
+    input.error[type=text],
+    textarea.error {
+      border: 2px solid $errorColor;
+      background: $errorBgColor;
+    }
+    label {
+      float: left;
+      width: 30%;
+      padding-top: 10px;
+      font-size: 14px;
+      &.error {
+        display: block;
+        padding-top: 0;
+        color: $errorColor;
+        margin-left: 30%;
+      }
+    }
+    textarea {
+      width: 70%;
+      padding: 10px;
+      margin: 0;
+      border: 2px solid #e5e5e5;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    textarea.full-width {
+      width: 100%;
+    }
+    .required {
+      font-size: 14px;
+    }
+
+    .req { 
+      font-size: 22px;
+      line-height: 0;
+      height: 0;
+      position: relative;
+      top: 3px;
+      color: $errorColor;
+    }
+
+}
+
+
+// label over field style
+.stack-form {
+  .field {
+  width: 100%;
+  margin-bottom: 10px;
+  min-height: 30px;
+
+    input.text,
+    input[type=text] {
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    input.error.text,
+    input.error[type=text],
+    textarea.error {
+      border: 2px solid rgb(250, 122, 122);
+      background: rgb(255, 232, 236);
+    }
+    label {
+      clear: both;
+      width: 100%;
+      padding-top: 10px;
+      font-size: 14px;
+      float: none;
+      display: block;
+      &.error {
+        padding-top: 0;
+        margin-left: 0;
+      }
+    }
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 0;
+      border: 2px solid #e5e5e5;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    textarea.full-width {
+      width: 100%;
+    }
+    .required {
+      font-size: 14px;
+    }
+    &.checkbox {
+      padding-left: 0;
+
+    }
+
+  }
+
+  .customSelect { width: 100%;}
+
+}
+
+
+.field .button {
+  margin-left: 30%;
+}
+
+
+input.text,
+input[type=text] {
+  border: none;
+  background: #e5e5e5;
+  color: black;
+  height: 36px;
+  border:2px solid #e5e5e5;
+  line-height: 36px;
+  padding: 0 10px;
+  font-family: $bodyFont;
+  font-size: 14px;
+  -webkit-border-radius: 0;
+  -webkit-appearance:none;
+}
+textarea {
+  border: none;
+  background: #e5e5e5;
+  color: black;
+  font-family: $bodyFont;
+  font-size: 14px;  
+  -webkit-border-radius: 0;
+  -webkit-appearance:none;
+}
+input.text:focus,
+input[type=text]:focus,
+textarea:focus,
+input.error.text:focus,
+input.error[type=text]:focus,
+textarea.error:focus {
+  background: #efefef;
+  color: #000;
+  border-color: #e5e5e5;
+}
+
+
+
+
+// custom checkboxes
+.field.checkbox {
+  margin-left: 0;
+  padding-left: 30%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.field.checkbox label {
+  float: none;
+}
+.field .custom-checkbox .styled {
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  width: 0;
+}
+.field .custom-checkbox label {
+  font-size: 12px;
+  padding-left: 26px;
+  cursor: pointer;
+  background: url(../img/form-elements.png) no-repeat -1px -251px;
+  display: inline-block;
+  width: auto;
+  font-family: $bodyFont;
+}
+.field .custom-checkbox label.hover {
+  color: #666;
+}
+.field .custom-checkbox label.error {
+  color:red;
+}
+.field .custom-checkbox label.checked {
+  background-position: -1px -381px;
+}
+
+
+// custom radio boxes
+.field .custom-radio {
+  display: inline-block;
+}
+.field .custom-radio .styled {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+  padding: 0;
+}
+.field .custom-radio label {
+  width: auto;
+  float: none;
+  font-size: 14px;
+  padding-left: 26px;
+  padding-right: 16px;
+  cursor: pointer;
+  background: url(../img/form-elements.png) no-repeat -1px -122px;
+  display: inline-block;
+  font-family: $bodyFont;
+}
+.field .custom-radio label.hover {
+  color: #666;
+}
+.field .custom-radio label.checked {
+  background-position: -1px 8px;
+}
+
+
+// custom select menu 
+.customSelect { 
+    font:12px sans-serif;
+    background:#fff url(http://i48.tinypic.com/2u7rpec.png) right center no-repeat;
+    border:1px solid #ddd;
+    color:#555;
+    padding:7px 9px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    width:70%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.touch .hasCustomSelect {
+  right: 0;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  // Retina-specific stuff here 
+  // - each image must have an image size reference for the smaller 
+  // version of the retina image (half its own size)
+
+  .modal-overlay .modal-window .modal-close {
+    background-image: url(../img/close-x.png);
+    background-size: 16px 16px;
+  }
+
+}
