@@ -1,0 +1,14 @@
+// tabs
+
+.tab-nav {
+    .tablink { 
+        &.active { 
+        }
+    }
+
+}
+
+.tab-content { display: none;
+    &.active { display: block;
+    }
+}

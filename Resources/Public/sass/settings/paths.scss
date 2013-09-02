@@ -1,0 +1,27 @@
+// image paths
+
+// for typo3 
+
+// Ext image path
+// $otImagePath: "/typo3conf/ext/olivers_travels/Resources/Public/img";
+
+// // Ext JS path
+// $otJsPath: "/typo3conf/ext/olivers_travels/Resources/Public/js";
+
+// // Ext fonts path
+// $otFontPath: "/typo3conf/ext/olivers_travels/Resources/Public/fonts";
+
+
+// for static front end build
+
+
+$otImagePath: "../img";
+// #{$otImagePath}
+
+// Ext JS path
+$otJsPath: "../js";
+// #{$otJsPath}
+
+// Ext fonts path
+$otFontPath: "../fonts";
+// #{$otFontPath}

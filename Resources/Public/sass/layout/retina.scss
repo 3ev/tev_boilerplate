@@ -11,7 +11,7 @@ only screen and (                min-resolution: 2dppx) {
   // version of the retina image (half its own size)
 
   .modal-overlay .modal-window .modal-close {
-    background-image: url(../img/close-x.png);
+    background-image: url( #{$otImagePath}/close-x.png);
     background-size: 16px 16px;
   }
 
