@@ -53,7 +53,7 @@
               font-size: 12px;
               cursor: pointer;
               color: #808080;
-              background: url(../img/close-x.png) 46px 11px no-repeat;
+              background: url(#{$otImagePath}/close-x.png) 46px 11px no-repeat;
               -moz-transition: opacity .4s ease-in-out;
               -webkit-transition: opacity .4s ease-in-out;
               -ms-transition: opacity .4s ease-in-out;

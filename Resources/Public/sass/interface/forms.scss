@@ -183,7 +183,7 @@ textarea.error:focus {
   font-size: 12px;
   padding-left: 26px;
   cursor: pointer;
-  background: url(../img/form-elements.png) no-repeat -1px -251px;
+  background: url(#{$otImagePath}/form-elements.png) no-repeat -1px -251px;
   display: inline-block;
   width: auto;
   font-family: $bodyFont;
@@ -216,7 +216,7 @@ textarea.error:focus {
   padding-left: 26px;
   padding-right: 16px;
   cursor: pointer;
-  background: url(../img/form-elements.png) no-repeat -1px -122px;
+  background: url(#{$otImagePath}/form-elements.png) no-repeat -1px -122px;
   display: inline-block;
   font-family: $bodyFont;
 }

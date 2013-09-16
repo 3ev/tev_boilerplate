@@ -20,17 +20,22 @@ Install into TYPO3 with Composer. Add the following config to your `composer.jso
     "require": {
         "3ev/tev_boilerplate": "master"
     },
-    "repositories": {
+    "repositories": [
         {
             "type": "vcs",
             "url": "https://github.com/3ev/tev_boilerplate"
         }
-    },
+    ]
+}
+```
+
+If your composer.json sits outside of your TYPO3 directory, you'll need to add:
+
+```json
+{
     "extra": {
         "installer-paths": {
-            "htdocs/typo3conf/ext/{$name}/": [
-                "3ev/tev_boilerplate"
-            ]
+            "path/to/typo3/typo3conf/ext/{$name}/": ["type:typo3-cms-extension"]
         }
     }
 }

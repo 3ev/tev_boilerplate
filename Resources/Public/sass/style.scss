@@ -2,15 +2,14 @@
 // sass --watch --debug-info --style compact sass/style.scss:css/style.css
 // in production run sass --watch  sass/style.scss:css/style.css --style compressed
 
-// use individual files for stand alone site sections eg home.scss products.css
 
 // settings
 @import "settings/reset.scss";
 @import "settings/clearfix.scss";
-@import "settings/image.scss";
 
 
 // toolkits & varaibles
+@import "settings/paths.scss";
 @import "colors.scss";
 @import "toolkit/tools.scss";
 
