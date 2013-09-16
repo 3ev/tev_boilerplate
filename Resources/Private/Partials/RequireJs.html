@@ -6,6 +6,7 @@
 		<v:asset.script name="main" path="EXT:{ext}/Resources/Public/compiled/js/main.js" />
 	</f:then>
 	<f:else>
+        <v:asset.script name="require" path="EXT:tev_boilerplate/Resources/Public/js/require.js" />
 		<v:asset.script name="main-dev" dependencies="require" path="EXT:{ext}/Resources/Public/js/main.js" standalone="1" />
 	</f:else>
 </f:if>
